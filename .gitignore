@@ -1,3 +1,8 @@
 *.o
 wheatley-idle
+wheatley-failure
+wheatley-init
+wheatley-library.backup
+wheatley-processing
+wheatley-success
 
