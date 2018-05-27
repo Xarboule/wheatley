@@ -2,9 +2,8 @@
 #include "wheatley-library.h"
 
 int main(){
-//	initialize();
-	green_light_off();
-	red_light_off();
+
+	all_light_off();
 
 	while(42){
 		orange_light_on();

@@ -19,6 +19,10 @@ void green_light_on();
 
 void green_light_off();
 
+void all_light_on();
+
+void all_light_off();
+
 void display_binary(int value);
 
 void blink();
