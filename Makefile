@@ -40,6 +40,14 @@ wheatley-library.o: wheatley-library.h wheatley-library.c
 sysfs-gpio.o: sysfs-gpio.c sysfs-gpio.h
 	gcc -o sysfs-gpio.o -c sysfs-gpio.c
 
+
+install: 
+	cp wheatley-init /usr/bin
+	cp wheatley-idle /usr/bin
+	cp wheatley-processing /usr/bin
+	cp wheatley-success /usr/bin
+	cp wheatley-failure /usr/bin
+
 clean:
 	$(RM) *.o
 	$(RM) wheatley-idle
