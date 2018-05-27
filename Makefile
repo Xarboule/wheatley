@@ -1,3 +1,20 @@
+all: init processing idle
+
+init: wheatley-library.o sysfs-gpio.o wheatley-init.o
+	gcc -Wall -o wheatley-init wheatley-library.o sysfs-gpio.o wheatley-init.o
+
+wheatley-init.o: wheatley-init.c
+	gcc -Wall -o wheatley-init.o -c wheatley-init.c
+
+
+processing: wheatley-library.o sysfs-gpio.o wheatley-processing.o
+	gcc -Wall -o wheatley-processing wheatley-library.o sysfs-gpio.o wheatley-processing.o
+
+wheatley-processing.o: wheatley-processing.c
+	gcc -Wall -o wheatley-processing.o -c wheatley-processing.c
+
+
+
 idle: wheatley-library.o sysfs-gpio.o wheatley-idle.o
 	gcc -Wall -o wheatley-idle wheatley-library.o sysfs-gpio.o wheatley-idle.o 
 
