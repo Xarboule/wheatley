@@ -5,13 +5,14 @@ int main(){
 	all_light_off();
 
 	red_light_on();
-	sleep(2);
-	red_light_off();
 	sleep(1);
+	for(int i=0; i<10; i++){
+	red_light_off();
+	usleep(500000);
 	red_light_on();
-	sleep(1);
+	usleep(500000);
+	}
 	red_light_off();
-	sleep(1);
 
 	return(EXIT_SUCCESS);
 }

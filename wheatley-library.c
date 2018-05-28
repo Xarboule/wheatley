@@ -16,7 +16,6 @@ void initialize(){
 
 void red_light_on(){
 	GPIOWrite(RED_PIN, HIGH);
-	printf("RED\n");	
 }
 
 void red_light_off(){
@@ -25,7 +24,6 @@ void red_light_off(){
 
 void orange_light_on(){
 	GPIOWrite(ORANGE_PIN, HIGH);
-	printf("ORANGE");
 }
 
 void orange_light_off(){
@@ -34,7 +32,6 @@ void orange_light_off(){
 
 void green_light_on(){
 	GPIOWrite(GREEN_PIN, HIGH);
-	printf("GREEN");
 }
 
 void green_light_off(){

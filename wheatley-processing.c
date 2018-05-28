@@ -7,9 +7,9 @@ int main(){
 
 	while(42){
 		orange_light_on();
-		sleep(1);
+		usleep(500000);
 		orange_light_off();
-		sleep(1);
+		usleep(500000);
 	}
 	
 	return(EXIT_SUCCESS);

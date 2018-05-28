@@ -13,9 +13,7 @@ int main(){
 	green_light_on();
 	sleep(1);
 	
-	green_light_off();
-	orange_light_off();
-	red_light_off();
+	all_light_off();
 
 	return(EXIT_SUCCESS);
 }
